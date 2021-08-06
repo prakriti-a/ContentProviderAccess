@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin"
+        android:padding="@dimen/padding"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAddData"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/margin"
+            android:contentDescription="@string/crud"
+            android:text="@string/add" />
+
+        <Button
+            android:id="@+id/btnUpdateData"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/crud"
+            android:text="@string/update" />
+
+        <Button
+            android:id="@+id/btnDeleteData"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin"
+            android:contentDescription="@string/crud"
+            android:text="@string/delete" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtEnteredName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:hint="@string/enter_name"
+        android:padding="@dimen/padding"
+        android:importantForAutofill="no"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/edtNewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:hint="@string/enter_new_name"
+        android:visibility="gone"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/txtQueryResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="@dimen/text"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:padding="@dimen/padding"/>
+
+    <!--
+    <ListView
+        android:id="@+id/contactsListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/padding" />-->
+
+    <ImageButton
+        android:id="@+id/btnRetrieveData"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:contentDescription="@string/crud"
+        android:backgroundTint="@color/primaryDarkColor"
+        android:src="@drawable/retrieve"
+        app:tint="@color/white" />
+
+</LinearLayout>
